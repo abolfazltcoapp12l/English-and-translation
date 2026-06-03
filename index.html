@@ -4,11 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>پروفایل یحیی بوریائی</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
 --bg:#070b18;
 --card:rgba(255,255,255,0.05);
@@ -23,7 +26,11 @@
 --rubika:#8d3189;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
 font-family:'Vazirmatn',sans-serif;
@@ -131,6 +138,7 @@ color:rgba(255,255,255,0.3);
 font-size:0.7rem;
 letter-spacing:2px;
 }
+
 </style>
 </head>
 
@@ -161,12 +169,24 @@ letter-spacing:2px;
 افزودن به مخاطبین
 </a>
 
-
 <div class="social-grid">
-<a href="https://web.eitaa.com/#@Ab441864" class="social-btn eitaa">ایتا</a>
-<a href="https://web.rubika.ir/#c=u0Gu5I60d3934363408d77509129bb19" class="social-btn rubika">روبیکا</a>
-<a href="tel:09138361864" class="social-btn call">09138361864</a>
-<a href="tel:09226085177" class="social-btn call">09226085177</a>
+
+<a href="#" onclick="openEitaa()" class="social-btn eitaa">
+ایتا
+</a>
+
+<a href="#" onclick="openRubika()" class="social-btn rubika">
+روبیکا
+</a>
+
+<a href="tel:09138361864" class="social-btn call">
+09138361864
+</a>
+
+<a href="tel:09226085177" class="social-btn call">
+09226085177
+</a>
+
 </div>
 
 <div class="footer">
@@ -175,6 +195,37 @@ mrhajiarab
 
 </div>
 </div>
+
+
+<script>
+
+function openEitaa(){
+
+var app = "eitaa://resolve?domain=Ab441864";
+var web = "https://eitaa.com/Ab441864";
+
+window.location = app;
+
+setTimeout(function(){
+window.location = web;
+},1500);
+
+}
+
+function openRubika(){
+
+var app = "rubika://l.rubika.ir/u0Gu5I60d3934363408d77509129bb19";
+var web = "https://rubika.ir/u0Gu5I60d3934363408d77509129bb19";
+
+window.location = app;
+
+setTimeout(function(){
+window.location = web;
+},1500);
+
+}
+
+</script>
 
 </body>
 </html>
