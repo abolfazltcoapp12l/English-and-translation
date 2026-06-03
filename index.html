@@ -165,17 +165,19 @@ letter-spacing:2px;
 <span class="skill">Teaching</span>
 </div>
 
-<a href="contact.vcf" class="save-btn">
+<a 
+href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AN:بوریائی;یحیی;;;%0AFN:یحیی بوریائی%0ATEL;TYPE=CELL:09138361864%0ATEL;TYPE=CELL:09226085177%0AEND:VCARD"
+class="save-btn">
 افزودن به مخاطبین
 </a>
 
 <div class="social-grid">
 
-<a href="#" onclick="openEitaa()" class="social-btn eitaa">
+<a href="eitaa://resolve?domain=Ab441864" class="social-btn eitaa">
 ایتا
 </a>
 
-<a href="#" onclick="openRubika()" class="social-btn rubika">
+<a href="rubika://l.rubika.ir/u0Gu5I60d3934363408d77509129bb19" class="social-btn rubika">
 روبیکا
 </a>
 
@@ -195,37 +197,6 @@ mrhajiarab
 
 </div>
 </div>
-
-
-<script>
-
-function openEitaa(){
-
-var app = "eitaa://resolve?domain=Ab441864";
-var web = "https://eitaa.com/Ab441864";
-
-window.location = app;
-
-setTimeout(function(){
-window.location = web;
-},1500);
-
-}
-
-function openRubika(){
-
-var app = "rubika://l.rubika.ir/u0Gu5I60d3934363408d77509129bb19";
-var web = "https://rubika.ir/u0Gu5I60d3934363408d77509129bb19";
-
-window.location = app;
-
-setTimeout(function(){
-window.location = web;
-},1500);
-
-}
-
-</script>
 
 </body>
 </html>
