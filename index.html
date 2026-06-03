@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>پروفایل یحیی بوریائی</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#070b18;
+--card:rgba(255,255,255,0.05);
+--border:rgba(255,255,255,0.12);
+--text:#ffffff;
+--muted:#b6c2d9;
+--primary:#7dd3fc;
+--shadow:0 25px 50px -12px rgba(0,0,0,0.5);
+--chip:rgba(255,255,255,0.08);
+
+--eitaa:#f57c00;
+--rubika:#8d3189;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Vazirmatn',sans-serif;
+min-height:100vh;
+color:var(--text);
+display:flex;
+align-items:center;
+justify-content:center;
+padding:24px;
+
+background:
+radial-gradient(800px circle at 15% 10%, rgba(125,211,252,0.2), transparent 45%),
+radial-gradient(700px circle at 85% 85%, rgba(56,189,248,0.15), transparent 50%),
+linear-gradient(140deg,#070b18 0%,#0b1430 40%,#060e22 100%);
+}
+
+.card{
+width:100%;
+max-width:390px;
+background:var(--card);
+border:1px solid var(--border);
+border-radius:35px;
+backdrop-filter:blur(25px);
+box-shadow:var(--shadow);
+overflow:hidden;
+}
+
+.content{
+padding:40px 24px 30px;
+text-align:center;
+}
+
+.name{
+font-size:1.65rem;
+font-weight:800;
+margin-bottom:8px;
+}
+
+.title{
+font-size:0.95rem;
+font-weight:600;
+color:#7dd3fc;
+margin-bottom:18px;
+}
+
+.bio{
+color:var(--muted);
+font-size:0.92rem;
+line-height:2;
+margin-bottom:25px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:8px;
+margin-bottom:30px;
+}
+
+.skill{
+background:var(--chip);
+padding:6px 14px;
+border-radius:12px;
+font-size:0.8rem;
+}
+
+.save-btn{
+display:block;
+width:100%;
+text-decoration:none;
+background:linear-gradient(135deg,#7dd3fc,#0ea5e9);
+color:#06152b;
+font-weight:800;
+padding:16px;
+border-radius:20px;
+margin-bottom:15px;
+}
+
+.social-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.social-btn{
+text-decoration:none;
+color:#fff;
+padding:14px;
+border-radius:18px;
+font-weight:700;
+font-size:0.9rem;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.eitaa{background:var(--eitaa);}
+.rubika{background:var(--rubika);}
+.call{background:rgba(255,255,255,0.1);}
+
+.footer{
+margin-top:25px;
+color:rgba(255,255,255,0.3);
+font-size:0.7rem;
+letter-spacing:2px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<div class="content">
+
+<h1 class="name">یحیی بوریائی</h1>
+
+<div class="title">
+مدرس زبان انگلیسی | IELTS & Conversation Coach
+</div>
+
+<p class="bio">
+مدرس زبان انگلیسی در کلیه سطوح<br>
+مترجم نوشتاری و مترجم حضوری
+</p>
+
+<div class="skills">
+<span class="skill">IELTS</span>
+<span class="skill">Conversation</span>
+<span class="skill">Translation</span>
+<span class="skill">Teaching</span>
+</div>
+
+<a href="contact.vcf" download class="save-btn">📥 ذخیره مشخصات استاد</a>
+
+<div class="social-grid">
+<a href="https://web.eitaa.com/#@Ab441864" class="social-btn eitaa">ایتا</a>
+<a href="https://web.rubika.ir/#c=u0Gu5I60d3934363408d77509129bb19" class="social-btn rubika">روبیکا</a>
+<a href="tel:09138361864" class="social-btn call">09138361864</a>
+<a href="tel:09226085177" class="social-btn call">09226085177</a>
+</div>
+
+<div class="footer">
+mrhajiarab
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
