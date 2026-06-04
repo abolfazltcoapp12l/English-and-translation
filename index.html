@@ -106,22 +106,24 @@ color:#06152b;
 font-weight:800;
 padding:16px;
 border-radius:20px;
-margin-bottom:15px;
+margin-bottom:20px;
 }
 
+/* شبکه اجتماعی کنار هم */
 .social-grid{
-display:flex;
-flex-direction:column;
+display:grid;
+grid-template-columns:1fr 1fr;
 gap:12px;
+margin-bottom:20px;
 }
 
 .social-btn{
 text-decoration:none;
 color:#fff;
-padding:16px;
+padding:14px;
 border-radius:18px;
 font-weight:700;
-font-size:1rem;
+font-size:0.95rem;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -130,10 +132,24 @@ justify-content:center;
 .eitaa{background:var(--eitaa);}
 .rubika{background:var(--rubika);}
 
+/* دکمه‌های تماس زیر هم و بزرگ */
+.call-section{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
 .call{
+text-decoration:none;
 background:rgba(255,255,255,0.1);
-font-size:1.05rem;
+color:#fff;
 padding:18px;
+border-radius:20px;
+font-weight:800;
+font-size:1.05rem;
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
 .footer{
@@ -170,11 +186,12 @@ letter-spacing:2px;
 </div>
 
 <a 
-href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AN:بوریائی;یحیی;;;%0AFN:یحیی بوریائی%0ATEL;TYPE=CELL:09138361864%0AEND:VCARD"
+href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AN:بوریائی;یحیی;;;%0AFN:یحیی بوریائی%0ATEL;TYPE=CELL:09138361864%0ATEL;TYPE=CELL:09226085177%0AEND:VCARD"
 class="save-btn">
 افزودن به مخاطبین
 </a>
 
+<!-- شبکه های اجتماعی کنار هم -->
 <div class="social-grid">
 
 <a href="eitaa://resolve?domain=Ab441864" class="social-btn eitaa">
@@ -185,8 +202,17 @@ class="save-btn">
 روبیکا
 </a>
 
-<a href="tel:09138361864" class="social-btn call">
+</div>
+
+<!-- شماره ها زیر هم و بزرگ -->
+<div class="call-section">
+
+<a href="tel:09138361864" class="call">
 📞 09138361864
+</a>
+
+<a href="tel:09226085177" class="call">
+📞 09226085177
 </a>
 
 </div>
