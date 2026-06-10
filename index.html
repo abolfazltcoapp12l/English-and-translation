@@ -4,229 +4,274 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>پروفایل یحیی بوریائی</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
-
 <style>
-
-:root{
---bg:#070b18;
---card:rgba(255,255,255,0.05);
---border:rgba(255,255,255,0.12);
---text:#ffffff;
---muted:#b6c2d9;
---primary:#7dd3fc;
---shadow:0 25px 50px -12px rgba(0,0,0,0.5);
---chip:rgba(255,255,255,0.08);
-
---eitaa:#f57c00;
---rubika:#8d3189;
+:root {
+  --bg: #060d1e;
+  --surface: #ffffff;
+  --border: rgba(255,255,255,0.1);
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --shadow: 0 40px 80px -20px rgba(0,0,0,0.7);
 }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 70% 50% at 20% 5%, rgba(56,189,248,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 60% at 80% 90%, rgba(14,165,233,0.12) 0%, transparent 55%),
+    linear-gradient(160deg, #060d1e 0%, #0c1a3a 50%, #050c1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
 }
 
-body{
-font-family:'Vazirmatn',sans-serif;
-min-height:100vh;
-color:var(--text);
-display:flex;
-align-items:center;
-justify-content:center;
-padding:24px;
-
-background:
-radial-gradient(800px circle at 15% 10%, rgba(125,211,252,0.2), transparent 45%),
-radial-gradient(700px circle at 85% 85%, rgba(56,189,248,0.15), transparent 50%),
-linear-gradient(140deg,#070b18 0%,#0b1430 40%,#060e22 100%);
+.card {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
-.card{
-width:100%;
-max-width:390px;
-background:var(--card);
-border:1px solid var(--border);
-border-radius:35px;
-backdrop-filter:blur(25px);
-box-shadow:var(--shadow);
-overflow:hidden;
+/* ── Header ── */
+.header {
+  background: linear-gradient(145deg, #0f1f3d 0%, #1a3a6e 60%, #0d2050 100%);
+  padding: 40px 28px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.content{
-padding:40px 24px 30px;
-text-align:center;
+.header::before {
+  content: '';
+  position: absolute;
+  top: -60px; left: -60px;
+  width: 220px; height: 220px;
+  background: radial-gradient(circle, rgba(56,189,248,0.18) 0%, transparent 70%);
 }
 
-.name{
-font-size:1.65rem;
-font-weight:800;
-margin-bottom:8px;
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -50px; right: -40px;
+  width: 180px; height: 180px;
+  background: radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 70%);
 }
 
-.title{
-font-size:0.95rem;
-font-weight:600;
-color:#7dd3fc;
-margin-bottom:18px;
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 auto 18px;
+  border: 3px solid rgba(255,255,255,0.2);
+  position: relative;
+  z-index: 1;
 }
 
-.bio{
-color:var(--muted);
-font-size:0.92rem;
-line-height:2;
-margin-bottom:25px;
+.name {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
 }
 
-.skills{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:8px;
-margin-bottom:30px;
+.role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #7dd3fc;
+  position: relative;
+  z-index: 1;
+  line-height: 1.7;
 }
 
-.skill{
-background:var(--chip);
-padding:6px 14px;
-border-radius:12px;
-font-size:0.8rem;
+/* ── Body ── */
+.body {
+  background: #ffffff;
+  padding: 28px 24px 24px;
 }
 
-.save-btn{
-display:block;
-width:100%;
-text-decoration:none;
-background:linear-gradient(135deg,#7dd3fc,#0ea5e9);
-color:#06152b;
-font-weight:800;
-padding:16px;
-border-radius:20px;
-margin-bottom:20px;
+.bio {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* شبکه اجتماعی کنار هم */
-.social-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-margin-bottom:20px;
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
-.social-btn{
-text-decoration:none;
-color:#fff;
-padding:14px;
-border-radius:18px;
-font-weight:700;
-font-size:0.95rem;
-display:flex;
-align-items:center;
-justify-content:center;
+.chip {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  font-family: 'Vazirmatn', sans-serif;
 }
 
-.eitaa{background:var(--eitaa);}
-.rubika{background:var(--rubika);}
-
-/* دکمه‌های تماس زیر هم و بزرگ */
-.call-section{
-display:flex;
-flex-direction:column;
-gap:12px;
+.save-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #fff;
+  font-family: 'Vazirmatn', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-bottom: 14px;
+  transition: opacity 0.2s;
 }
 
-.call{
-text-decoration:none;
-background:rgba(255,255,255,0.1);
-color:#fff;
-padding:18px;
-border-radius:20px;
-font-weight:800;
-font-size:1.05rem;
-display:flex;
-align-items:center;
-justify-content:center;
+.save-btn:hover { opacity: 0.9; }
+
+.divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 4px 0 14px;
 }
 
-.footer{
-margin-top:25px;
-color:rgba(255,255,255,0.3);
-font-size:0.7rem;
-letter-spacing:2px;
+.social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
 }
 
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 13px;
+  border-radius: 14px;
+  font-family: 'Vazirmatn', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  transition: opacity 0.2s;
+}
+
+.social-btn:hover { opacity: 0.88; }
+.eitaa  { background: #e65100; }
+.rubika { background: #6a1b9a; }
+
+.calls { display: flex; flex-direction: column; gap: 10px; }
+
+.call-btn {
+  display: block;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.call-btn:hover { background: #f1f5f9; }
+
+.call-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-family: 'Vazirmatn', sans-serif;
+  margin-bottom: 4px;
+}
+
+.call-num {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f172a;
+  font-family: 'Vazirmatn', sans-serif;
+  direction: ltr;
+  letter-spacing: 1px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.65rem;
+  color: #94a3b8;
+  letter-spacing: 3px;
+  font-family: 'Vazirmatn', sans-serif;
+}
 </style>
 </head>
-
 <body>
 
 <div class="card">
-<div class="content">
+  <div class="header">
+    <div class="avatar">ی</div>
+    <h1 class="name">یحیی بوریائی</h1>
+    <div class="role">
+      مدرس زبان انگلیسی<br>
+      IELTS &amp; Conversation Coach
+    </div>
+  </div>
 
-<h1 class="name">یحیی بوریائی</h1>
+  <div class="body">
+    <p class="bio">
+      مدرس زبان انگلیسی در کلیه سطوح<br>
+      مترجم نوشتاری و مترجم حضوری
+    </p>
 
-<div class="title">
-مدرس زبان انگلیسی | IELTS & Conversation Coach
-</div>
+    <div class="chips">
+      <span class="chip">IELTS</span>
+      <span class="chip">Conversation</span>
+      <span class="chip">Translation</span>
+      <span class="chip">Teaching</span>
+    </div>
 
-<p class="bio">
-مدرس زبان انگلیسی در کلیه سطوح<br>
-مترجم نوشتاری و مترجم حضوری
-</p>
+    <a href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AN:بوریائی;یحیی;;;%0AFN:یحیی بوریائی%0ATEL;TYPE=CELL:09138361864%0ATEL;TYPE=CELL:09226085177%0AEND:VCARD"
+       class="save-btn">افزودن به مخاطبین</a>
 
-<div class="skills">
-<span class="skill">IELTS</span>
-<span class="skill">Conversation</span>
-<span class="skill">Translation</span>
-<span class="skill">Teaching</span>
-</div>
+    <div class="divider"></div>
 
-<a 
-href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AN:بوریائی;یحیی;;;%0AFN:یحیی بوریائی%0ATEL;TYPE=CELL:09138361864%0ATEL;TYPE=CELL:09226085177%0AEND:VCARD"
-class="save-btn">
-افزودن به مخاطبین
-</a>
+    <div class="social-grid">
+      <a href="eitaa://resolve?domain=Ab441864" class="social-btn eitaa">ایتا</a>
+      <a href="rubika://l.rubika.ir/u0Gu5I60d3934363408d77509129bb19" class="social-btn rubika">روبیکا</a>
+    </div>
 
-<!-- شبکه های اجتماعی کنار هم -->
-<div class="social-grid">
+    <div class="calls">
+      <a href="tel:09138361864" class="call-btn">
+        <div class="call-label">فقط تماس</div>
+        <div class="call-num">09138361864</div>
+      </a>
+      <a href="tel:09226085177" class="call-btn">
+        <div class="call-label">شبکه‌های اجتماعی</div>
+        <div class="call-num">09226085177</div>
+      </a>
+    </div>
 
-<a href="eitaa://resolve?domain=Ab441864" class="social-btn eitaa">
-ایتا
-</a>
-
-<a href="rubika://l.rubika.ir/u0Gu5I60d3934363408d77509129bb19" class="social-btn rubika">
-روبیکا
-</a>
-
-</div>
-
-<!-- شماره ها زیر هم و بزرگ -->
-<div class="call-section">
-
-<a href="tel:09138361864" class="call">
-فقط تماس<br>
-<strong>09138361864</strong>
-</a>
-
-<a href="tel:09226085177" class="call">
-شبکه های اجتماعی<br>
-<strong>09226085177</strong>
-</a>
-
-</div>
-
-
-
-
-<div class="footer">
-mrhajiarab
-</div>
-
-</div>
+    <div class="footer">mrhajiarab</div>
+  </div>
 </div>
 
 </body>
